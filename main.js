@@ -5,7 +5,7 @@ function createDivs(numberDivs){
         for(let j=0;j<numberDivs;j++){
             
             const divsRow = document.createElement('div');
-            
+            divsRow.classList.add('hover');
             divsRow.style.height='1em';
             divsRow.style.flex='1';
             divsRow.style.width='1em';
@@ -24,3 +24,14 @@ function createDivs(numberDivs){
     }
 }
 createDivs(16);
+
+function hoverDivs(){
+    const divs = document.querySelectorAll('.hover');
+    divs.forEach((div)=>{
+        div.addEventListener('mouseenter',()=>{
+            div.classList.add('changeColor');
+        });
+    }); 
+}
+hoverDivs();
+
