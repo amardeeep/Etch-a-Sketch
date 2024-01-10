@@ -1,10 +1,19 @@
-.container{
+.container,.text{
+
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: space-evenly;
     
 }
+.buttons{
+    gap: 0.5em;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .header{
     display: flex;
     flex-direction: row;
@@ -16,4 +25,6 @@
 .changeColor{
     background-color: black;
 }
+
+
 
